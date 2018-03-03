@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Clock from './clock';
-import Tabs from './tabs';
-import Weather from './weather';
-import Autocomplete from './autocomplete';
+import Clock from './components/clock';
+import Tabs from './components/tabs';
+import Weather from './components/weather';
+import Autocomplete from './components/autocomplete';
 
 const Panes = [
   {title: 'one', content: 'first pane'},
@@ -26,10 +26,15 @@ class Root extends React.Component {
   render() {
     return (
       <div>
-        <Clock />
-        <Weather />
-        <Tabs />
-        <Autocomplete names={Names}/>
+        <div>
+          <Clock />
+          <Weather />
+          <Tabs />
+          <Autocomplete names={Names}/>
+          <div id="footer">
+            Coded by Kent Saeteurn
+          </div>
+        </div>
       </div>
     );
   }
