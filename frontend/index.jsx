@@ -29,7 +29,7 @@ class Root extends React.Component {
         <div>
           <Clock />
           <Weather />
-          <Tabs />
+          <Tabs panes={Panes}/>
           <Autocomplete names={Names}/>
           <div id="footer">
             Coded by Kent Saeteurn

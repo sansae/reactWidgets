@@ -15,6 +15,13 @@ export default class Tabs extends React.Component {
           </div>
           <div id="panes">
             <p>Hello world. I am the Tabs Component</p>
+            <ul>
+              <ul>
+                {this.props.panes.map((obj) => {
+                  return <li key={obj.title}>{obj.content}</li>
+                })}
+              </ul>
+            </ul>
           </div>
         </div>
       </div>
